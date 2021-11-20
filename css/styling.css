@@ -38,17 +38,16 @@ body {
 }
 
 .text{
-    border: 1px solid #707793;
+    border: 1px solid #3BBA9C;
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 20px;
 }
 
 .text p{
-    color: #3BBA9C;
+    color: #707793;
     margin-top: 0px;
     margin-bottom: 0px;
-    font-size: 17px;
     width: 290px;
 }
 
@@ -60,8 +59,8 @@ body {
 
 #title{
     margin-top: 0px;
-    font-size: 22px;
-    margin-bottom: 15px;
+    font-size: 20px;
+    margin-bottom: 20px;
 }
 
 .list{
