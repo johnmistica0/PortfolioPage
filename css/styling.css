@@ -38,16 +38,17 @@ body {
 }
 
 .text{
-    border: 1px solid #3BBA9C;
+    border: 1px solid #707793;
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 20px;
 }
 
 .text p{
-    color: #707793;
+    color: #3BBA9C;
     margin-top: 0px;
     margin-bottom: 0px;
+    font-size: 17px;
     width: 290px;
 }
 
@@ -59,8 +60,8 @@ body {
 
 #title{
     margin-top: 0px;
-    font-size: 20px;
-    margin-bottom: 20px;
+    font-size: 22px;
+    margin-bottom: 15px;
 }
 
 .list{
@@ -70,6 +71,7 @@ body {
 }
 
 .list i{
+    color: #707793;
     position: relative;
     font-size: 30px;
     margin: 5px;
@@ -77,7 +79,7 @@ body {
 }
 .list i:hover{
     cursor: pointer;
-    color:#707793;
+    color:#3BBA9C;
 }
 
 .list i .tooltiptext {
