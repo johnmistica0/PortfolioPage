@@ -14,7 +14,7 @@ body {
 }
 
 #bgimage {
-    background-image: url("./images/background.jpg");
+    background-image: url("../images/background.jpg");
     background-size: contain;
     opacity: 0.05;
     position: absolute;
