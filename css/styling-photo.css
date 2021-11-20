@@ -2,7 +2,6 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    text-align: left;
     background-color: #2E3047;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -10,7 +9,6 @@ body {
     font-family: 'Roboto';
     margin: 0px;
     position: relative;
-
 }
 
 #bgimage {
@@ -24,13 +22,15 @@ body {
     width: 100%;
     filter: grayscale(100%);
     overflow: hidden;
+    z-index: 0;
 }
 
-.container{
+.container {
     margin: auto;
     align-items: center;
     text-align: center;
     display: block;
+    z-index: 1;
 }
 
 .grid-container {
@@ -38,11 +38,80 @@ body {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 10px;
-    justify-content: center;
-    align-content: center;
+    justify-items: center;
+    text-align: center;
 }
 
-.grid-container img{
+.grid-container img {
     width: 300px;
     height: 200px;
+    transition: transform .2s;
+}
+
+.grid-container img:hover {
+    cursor: pointer;
+    transform: scale(1.035);
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #212333;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidenav a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #707793;
+    transition: 0.3s;
+}
+
+.sidenav a i {
+    margin-right: 10px;
+    justify-self: center;
+}
+
+.sidenav a:hover {
+    color: #3BBA9C;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+#menu {
+    font-size: 30px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 15px;
+    transition: color 1s;
+}
+
+#menu:hover {
+    cursor: pointer;
+    color: #707793;
 }
