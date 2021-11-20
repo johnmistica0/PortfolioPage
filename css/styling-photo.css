@@ -1,0 +1,48 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    background-color: #2E3047;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #3BBA9C;
+    font-family: 'Roboto';
+    margin: 0px;
+    position: relative;
+
+}
+
+#bgimage {
+    background-image: url("../images/background.jpg");
+    background-size: contain;
+    opacity: 0.05;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    filter: grayscale(100%);
+    overflow: hidden;
+}
+
+.container{
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    display: block;
+}
+
+.grid-container {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    justify-content: center;
+    align-content: center;
+}
+
+.grid-container img{
+    width: 300px;
+    height: 200px;
+}
