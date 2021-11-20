@@ -2,6 +2,16 @@
 <html>
 
 <head>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('send', 'pageview');
+        ga('send', 'pageview', location.pathname);
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/styling.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -40,15 +50,15 @@
                 <p>Computer Science Student at University of Illinois at Chicago. Passionate about mobile software development and web development</p>
             </div>
             <div class="list">
-                <i class="fa fa-user" aria-hidden="true" style="font-size: 28px;" onclick="document.getElementById('myModal').style.display = 'block';"><span class="tooltiptext">Resume</span></i>
-                <i class="fa fa-github" aria-hidden="true" onclick="ocation='https://github.com/johnmistica0'"><span class="tooltiptext">GitHub</span></i>
+                <i class="fa fa-user" aria-hidden="true" style="font-size: 28px;" onclick="document.getElementById('myModal').style.display = 'block ';"><span class="tooltiptext">Resume</span></i>
+                <i class="fa fa-github" aria-hidden="true" onclick="location.href='https://github.com/johnmistica0'"><span class="tooltiptext">GitHub</span></i>
                 <i class="fa fa-camera-retro" aria-hidden="true" onclick="location.href='./photography.html'"><span class="tooltiptext">Photography</span></i>
                 <i class="fa fa-linkedin-square" aria-hidden="true" onclick="location='https://www.linkedin.com/in/johnmistica0/'"><span class="tooltiptext">LinkedIn</span></i>
                 <i class="fa fa-instagram" aria-hidden="true" onclick="location='https://www.instagram.com/jmistical/'"><span class="tooltiptext">Instagram</span></i>
             </div>
             <div id="myModal" class="modal">
                 <div class="modal-content">
-                    <span class="close" onclick="document.getElementById('myModal').style.display = 'none';">&times;</span>
+                    <span class="close" onclick="document.getElementById('myModal ').style.display = 'none ';">&times;</span>
                     <embed src="./resources/Resume.pdf" frameborder="0" width="100%" height="100%">
                 </div>
 
@@ -63,16 +73,8 @@
         // Get the modal
         var modal = document.getElementById("myModal");
 
-        // Get the button that opens the modal
-        var btn = document.getElementById("myBtn");
-
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks the button, open the modal 
-        btn.onclick = function() {
-            modal.style.display = "block";
-        }
 
         // When the user clicks on <span> (x), close the modal
         span.onclick = function() {

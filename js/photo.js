@@ -18,11 +18,21 @@ const storage = getStorage();
 const starsRef = ref(storage, 'photo1.jpg');
 const listRef = ref(storage);
 let grid = document.getElementById('grid');
-listAll(listRef).then((res) => { res.items.forEach((itemRef) => { getDownloadURL(itemRef).then((url) => { let img = document.createElement('img');
+listAll(listRef).then((res) => { 
+    res.items.forEach((itemRef) => { 
+        getDownloadURL(itemRef).then((url) => { 
+            let img = document.createElement('img');
             img.setAttribute('src', url);
-            grid.appendChild(img); }); }); }).catch((error) => {});
-let items = [];
-const querySnapshot = await
-getDocs(collection(db, "users"));
-querySnapshot.forEach((doc) => { items.push(doc.data().first); });
-console.log(items.length)
+            grid.appendChild(img); 
+        }); 
+    }); 
+})
+.catch((error) => {});
+
+// let items = [];
+// const querySnapshot = await getDocs(collection(db, "users"));
+// querySnapshot.forEach((doc) => { items.push(doc.data().first); });
+// console.log(items.length)
+
+console.log(analytics.page_view);
+  

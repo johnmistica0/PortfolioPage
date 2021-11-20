@@ -140,8 +140,6 @@ body {
     width: 300px;
     height: 300px;
 }
-
-
 /* The Modal (background) */
 
 .modal {
@@ -164,8 +162,6 @@ body {
     background-color: rgba(0, 0, 0, 0.4);
     /* Black w/ opacity */
 }
-
-
 /* Modal Content */
 
 .modal-content {
@@ -174,8 +170,6 @@ body {
     width: 58.5%;
     height: 90vh;
 }
-
-
 /* The Close Button */
 
 .close {
@@ -257,3 +251,4 @@ body {
     cursor: pointer;
     color: #707793;
 }
+
