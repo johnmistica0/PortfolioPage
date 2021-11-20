@@ -8,6 +8,26 @@ body {
     -moz-osx-font-smoothing: grayscale;
     color: #3BBA9C;
     font-family: 'Roboto';
+    margin: 0px;
+    position: relative;
+
+}
+
+#bgimage {
+    background-image: url("/images/background.jpg");
+    background-size: contain;
+    opacity: 0.05;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    filter: grayscale(100%);
+    overflow: hidden;
+}
+
+#info{
+    position: relative;
 }
 
 .container{
@@ -17,15 +37,30 @@ body {
     display: block;
 }
 
+.text{
+    border: 1px solid #3BBA9C;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
 .text p{
     color: #707793;
     margin-top: 0px;
+    margin-bottom: 0px;
+    width: 290px;
 }
 
 #name{
     font-size: 30px;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+}
+
+#title{
+    margin-top: 0px;
+    font-size: 20px;
+    margin-bottom: 20px;
 }
 
 .list{
@@ -35,18 +70,110 @@ body {
 }
 
 .list i{
+    position: relative;
     font-size: 30px;
     margin: 5px;
+    transition: color 1s;
+}
+.list i:hover{
+    cursor: pointer;
+    color:#707793;
+}
+
+.list i .tooltiptext {
+    font-family: 'Roboto';
+    visibility: hidden;
+    font-size: 18px;
+    width: 120px;
+    background-color: transparent;
+    color: #3BBA9C;
+    text-align: center;
+    border-radius: 6px;
+    padding: 3px 0;
+    position: absolute;
+    font-weight: normal;
+    z-index: 1;
+    top: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
+  
+.list i .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -6px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent transparent #3BBA9C transparent;
+    animation: bounce 2.5s infinite;
+}
+
+@keyframes bounce {
+    0%,  
+    100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-3px);
+    }
+}
+  
+.list i:hover .tooltiptext {
+    visibility: visible;
 }
 
 .list i:first-child { margin-top: 0 !important; margin-left: 0 !important; }
 
 .list i:last-child { margin-bottom: 0 !important; margin-right: 0 !important; }
 
-img{
+#avatar{
     border-radius: 50%;
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
 }
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: transparent;
+    margin: auto;
+    width: 58.5%;
+    height: 90vh;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #3BBA9C;
+    float: right;
+    margin-top: 5px;
+    margin-bottom: 1px;
+    font-size: 28px;
+    font-weight: bold;
+    transition: color 1s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #707793;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
 
 
