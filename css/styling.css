@@ -2,13 +2,12 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    text-align: left;
     background-color: #2E3047;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #3BBA9C;
     font-family: 'Roboto';
-    margin: 0px;
+    margin: 0px auto;
     position: relative;
 }
 
@@ -25,10 +24,6 @@ body {
     overflow: hidden;
 }
 
-#info {
-    position: relative;
-}
-
 .container {
     margin: auto;
     align-items: center;
@@ -40,14 +35,14 @@ body {
     border: 1px solid #3BBA9C;
     padding: 10px;
     border-radius: 10px;
-    margin-bottom: 20px;
+    width: 290px;
+    margin: 0 auto 20px;
 }
 
 .text p {
     color: #707793;
     margin-top: 0px;
     margin-bottom: 0px;
-    width: 290px;
 }
 
 #name {
@@ -137,8 +132,10 @@ body {
 
 #avatar {
     border-radius: 50%;
-    width: 300px;
-    height: 300px;
+    width: auto;
+    height: 35vh;
+    /* width: 300px;
+    height: 300px; */
 }
 /* The Modal (background) */
 
