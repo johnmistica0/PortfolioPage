@@ -16,13 +16,21 @@ const analytics = getAnalytics(app);
 const db = getFirestore();
 const storage = getStorage();
 const starsRef = ref(storage, 'photo1.jpg');
-const listRef = ref(storage);
+const listRef = ref(storage, '/test');
 let grid = document.getElementById('grid');
 listAll(listRef).then((res) => { 
     res.items.forEach((itemRef) => { 
         getDownloadURL(itemRef).then((url) => { 
             let img = document.createElement('img');
+            img.classList.add("landscape");
             img.setAttribute('src', url);
+            img.addEventListener('click', function(){
+                var modal = document.getElementById("myModal");
+                modal.style.display = "block";
+                let clone = img.cloneNode(true);
+                clone.setAttribute('class', 'clone');
+                document.getElementById("mod-content").appendChild(clone);
+            });
             grid.appendChild(img); 
         }); 
     }); 
@@ -32,7 +40,5 @@ listAll(listRef).then((res) => {
 // let items = [];
 // const querySnapshot = await getDocs(collection(db, "users"));
 // querySnapshot.forEach((doc) => { items.push(doc.data().first); });
-// console.log(items.length)
+// console.log(items.length)  
 
-console.log(analytics.page_view);
-  
