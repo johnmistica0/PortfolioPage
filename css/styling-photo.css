@@ -51,6 +51,7 @@ body {
 .grid-container img:hover {
     cursor: pointer;
     transform: scale(1.035);
+    box-shadow: 0 8px 8px -4px black;
 }
 
 .sidenav {
