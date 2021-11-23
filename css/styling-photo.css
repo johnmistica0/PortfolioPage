@@ -143,8 +143,8 @@ body {
 .modal-content {
     background-color: transparent;
     margin: auto;
-    margin-top: -34px;
-    width: 90%;
+    margin-top: -17px;
+    width: 65%;
     height: 100%;
     display: flex;
     flex-direction: column;
