@@ -173,6 +173,19 @@ body {
     }
 }
 
+@media screen and (min-width: 3000px) {
+    .modal-content {
+        background-color: transparent;
+        margin: auto;
+        margin-top: -5px;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
 .modal-content img{
     width: 100%;
     height: auto;
