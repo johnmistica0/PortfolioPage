@@ -34,7 +34,7 @@ body {
 }
 
 .grid-container {
-    margin: auto 50px;
+    margin: 35px 30px;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 10px;
@@ -43,9 +43,17 @@ body {
 }
 
 .grid-container img {
-    width: 100%;
-    height: 100%;
+    width: 300px;
+    height: auto;
     transition: transform .2s;
+}
+
+@media screen and (max-width: 540px) {
+    .grid-container img {
+        width: 100%;
+        height: auto;
+        transition: transform .2s;
+    }
 }
 
 .grid-container img:hover {
@@ -106,9 +114,10 @@ body {
 #menu {
     color:#707793;
     font-size: 30px;
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: 0px;
+    z-index: 3;
     margin: 15px;
     transition: color 1s;
 }
@@ -144,11 +153,24 @@ body {
     background-color: transparent;
     margin: auto;
     margin-top: -17px;
-    width: 90%;
+    width: 65%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+@media screen and (max-width: 540px) {
+    .modal-content {
+        background-color: transparent;
+        margin: auto;
+        margin-top: -5px;
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 .modal-content img{

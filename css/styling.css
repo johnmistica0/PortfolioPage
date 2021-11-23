@@ -165,6 +165,15 @@ body {
     width: 58.5%;
     height: 90vh;
 }
+
+@media screen and (max-width: 540px) {
+    .modal-content {
+        background-color: transparent;
+        margin: auto;
+        width: 90%;
+        height: 90vh;
+    }
+}
 /* The Close Button */
 
 .close {
