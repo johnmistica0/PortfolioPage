@@ -34,7 +34,7 @@ body {
 }
 
 .grid-container {
-    margin: auto 60px;
+    margin: auto 50px;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 10px;
@@ -43,8 +43,8 @@ body {
 }
 
 .grid-container img {
-    width: 300px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
     transition: transform .2s;
 }
 
@@ -144,7 +144,7 @@ body {
     background-color: transparent;
     margin: auto;
     margin-top: -17px;
-    width: 65%;
+    width: 90%;
     height: 100%;
     display: flex;
     flex-direction: column;
