@@ -13,6 +13,7 @@ body {
 
 #bgimage {
     background-image: url("../images/background.jpg");
+    z-index: -1;
     background-size: contain;
     opacity: 0.05;
     position: absolute;
