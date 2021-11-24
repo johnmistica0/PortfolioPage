@@ -37,12 +37,8 @@
 // })
 // .catch((error) => {});
 
-let urlList = [1,2,3,4,5,6,7,8,9]
-
-urlList.forEach(loadPhotos);
-
-function loadPhotos(url){
-    url = './photos/landscape/' + url + '.JPG'
+for (var i = 1; i <= 12; i++){
+    let url = './photos/landscape/' + i + '.JPG'
     console.log(url);
     let grid = document.getElementById('grid');
     let img = document.createElement('img');
