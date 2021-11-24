@@ -42,7 +42,7 @@ let urlList = [1,2,3,4,5,6,7,8,9]
 urlList.forEach(loadPhotos);
 
 function loadPhotos(url){
-    url = './photos/landscape/' + url + '.jpg'
+    url = './photos/landscape/' + url + '.JPG'
     console.log(url);
     let grid = document.getElementById('grid');
     let img = document.createElement('img');
