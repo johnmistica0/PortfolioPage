@@ -37,7 +37,9 @@
 // })
 // .catch((error) => {});
 
-for (var i = 1; i <= 12; i++){
+var numPhotos = 9
+
+for (var i = 1; i <= numPhotos; i++){
     let url = './photos/landscape/' + i + '.JPG'
     console.log(url);
     let grid = document.getElementById('grid');
